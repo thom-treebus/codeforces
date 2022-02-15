@@ -15,11 +15,28 @@ int main() {
       arr.push_back(x);
     } 
 
-    int result = 0;
+    int result = -1;
+    int sum = 0;
+    for (int i = 1; i < n - 1; ++i) {
+      sum+= arr[i];
+    }
 
+    // if (sum % 2 != 0) {
+    //   cout << result << "\n";
+    // } else {
+    //   cout << result/2 << "\n";
+    // }
+    while (true) {
+      
+    }
 
-    cout << result << "\n";
+    for (int i = 1; i < n -1; ++i) {
+      
+    }
+
+    
   }
+  // 1 1 1 1 1 1
 
 
   return 0;
