@@ -18,7 +18,7 @@ int main() {
     int result = 0;
 
 
-    cout << result << "\n";
+    cout << result << "\n"; 
   }
 
 
