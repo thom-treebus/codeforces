@@ -2,11 +2,6 @@
 
 using namespace std;
 
-bool isPalindrome(string& s) {
-  string p = s;
-  reverse(p.begin(), p.end());
-  return s==p;
-}
 
 int main() {
   int t;
@@ -16,14 +11,13 @@ int main() {
     cin >> n >> k;
     string s;
     cin >> s;
-
-    int count = 1;
-    if (k > 1 && !isPalindrome(s)) {
-      count = 2;
-    } else {
-      count = 1;
-    }
+    
+    string p = s; 
+    reverse(p.begin(), p.end()); 
+    bool isPalindrome = s == p; 
+    int count = (k > 1 && !isPalindrome) ? 2 : 1; 
     cout << count << "\n";
+     
     }
 
   return 0;
